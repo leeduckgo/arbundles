@@ -6,7 +6,7 @@ import { longTo8ByteArray, shortTo2ByteArray } from "../utils";
 import { serializeTags } from "../tags";
 import type { Signer } from "../signing/index";
 import { pipeline } from "stream/promises";
-import { createWriteStream } from "fs";
+import { createWriteStream } from "node:fs";
 
 export async function createData(
   data: string | Uint8Array | NodeJS.ReadableStream,
