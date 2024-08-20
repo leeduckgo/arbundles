@@ -5,7 +5,7 @@ import base64url from "base64url";
 import { longTo8ByteArray, shortTo2ByteArray } from "../utils";
 import { serializeTags } from "../tags";
 import type { Signer } from "../signing/index";
-import { pipeline } from "stream/promises";
+import { pipeline } from "node:stream/promises";
 import { createWriteStream } from "node:fs";
 
 export async function createData(
